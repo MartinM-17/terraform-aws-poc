@@ -65,7 +65,17 @@ tags = {                                    # Etiquetas que describen el recurso
     Owner          = "Martin"
     Email          = "Martin@educacionit.com"
     Team           = "DevOpsTeam"
-    Proyectogrupo1 = "Desafio 13"
+    Proyectogrupo1 = "Actividad-AWS"
 }
 
+}
+
+terraform {
+  backend "remote" {
+    organization = "Martin-DevOps_org"
+
+    workspaces {
+      name = "terraform-aws-poc"
+    }
+  }
 }

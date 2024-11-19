@@ -3,7 +3,7 @@ name: Terraform AWS POC Pipeline
 on:
   push:
     branches:
-      - main   # Se ejecuta el pipeline al hacer push en la rama principal
+      - main   # Se ejecuta el pipeline al hacer push en el main
   pull_request: # También se ejecuta al crear o actualizar un pull request
 
 jobs:
@@ -39,7 +39,7 @@ jobs:
           TF_API_TOKEN: ${{ secrets.TF_API_TOKEN }}
 
       # Aplicación de los Cambios
-      # Aplica los cambios solo si se hace un push en la rama principal
+      # Aplica los cambios solo si se hace un push en el main
       - name: Terraform Apply
         if: github.event_name == 'push'
         run: terraform apply -auto-approve
