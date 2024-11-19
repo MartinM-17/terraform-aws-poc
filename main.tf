@@ -65,7 +65,7 @@ tags = {                                    # Etiquetas que describen el recurso
     Owner          = "Martin"
     Email          = "Martin@educacionit.com"
     Team           = "DevOpsTeam"
-    Proyectogrupo1 = "Actividad-AWS"
+    Proyectogrupo1 = "Desafio 13"
 }
 
 }
