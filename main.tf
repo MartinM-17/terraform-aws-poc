@@ -1,4 +1,4 @@
-# Proveedor de AWS: Aquí definimos el proveedor y la región en la que desplegaremos nuestros recursos.
+# Proveedor de AWS: Aquí definimos el proveedor y la región en la que desplegaremos los recursos.
 provider "aws" {
 region = var.aws_region
 }
